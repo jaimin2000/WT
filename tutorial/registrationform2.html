@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- registration form 2 Registration form-->
+<html>
+	<head><title>Registration form</title></head>
+	<body>
+		<h1 align="center">Registration Form</h1>
+		<form method="GET" name="form1">
+			<fieldset>
+				<legend>Personal detail</legend>
+				Username:<input type="text" name="text_user"/><br/>
+				Password:<input type="password" name="passwd"/><br/>
+			</fieldset>
+			<fieldset>
+				<legend>Branch Selection</legend>
+				Select your branch<br/>
+				<input type="radio" name="radio_br"/>Computer
+				<input type="radio" name="radio_br"/>Electrical
+				<input type="radio" name="radio_br"/>Mechanical
+			</fieldset>
+			<fieldset>
+				<legend>Education Selection</legend>
+				Select your education<br/>
+				<input type="checkbox" name="check_ed"/>Diploma
+				<input type="checkbox" name="check_ed"/>Degree
+				<input type="checkbox" name="check_ed"/>Master-Degree
+			</fieldset>
+			<fieldset>
+				<legend>City Selection</legend>
+				Select your city<br/>
+				<select name="select_city">
+					<option selected>Rajkot</option>
+					<option>Ahmedabad</option>
+					<option>Surat</option>
+				</select>
+			</fieldset>
+			<br/>
+			<textarea placeholder="hi friends how are you?"></textarea><br/>
+			<input type="file" name="file"><input type="submit" value="submit"><input type="reset" value="reset">
+			
+		</form>
+	</body>
+</html>
