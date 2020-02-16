@@ -1,1 +1,32 @@
 <!-- Prepare a form for next semester registration of students of your college-->
+<!DOCTYPE  html>
+<html>
+	<head><title>Student Registration Form</title></head>
+	<body>
+		<form method="POST" name="registration_form">
+			<fieldset>
+				<legend>Personal Details</legend>
+				First Name: <input type="text" name="text_fn" ><br/>
+				Middle Name: <input type="text" name="text_mn"><br/>
+				Last Name: <input type="text" name="text_ln"><br/>
+				Gender: <input type="radio" name="radio_gen" value="Male">Male <input type="radio" name="radio_gen" value="Female">Female<input type="radio" name="radio_gen" value="Other">Other<br/>
+				Category: <input type="radio" name="radio_cat" value="Open">Open<input type="radio" name="radio_cat" value="OBC">OBC<input type="radio" name="radio_cat" value="ST">ST<input type="radio" name="radio_cat" value="SC">SC<br/>
+				Contact No: <input type="text" name="text_con"><br/><br/>
+				Address1: <textarea placeholder="Enter your permanent address" name="text_add1"></textarea><br/>
+				Address2: <textarea placeholder="Enter your current address" name="text_add2"></textarea><br/>
+			</fieldset>
+			<fieldset>
+				<legend>Educational Details</legend>
+				Admission Date: <input type="date" name="date_ad"><br/>
+				Department: <input type="text" name="text_dep" ><br/>
+				Fees Paid: <input type="text" name="text_fee"><br/>
+				Fees Remaining: <input type="text" name="text_fee2"><br/><br/>
+			</fieldset>
+			
+			<button type="reset" value="sub1" name="btn_submit">submit1</button>using button
+			<button type="reset" value="res1" name="btn_reset">reset1</button></br>
+			<input type="reset" value="sub2" name="in_submit">using input
+			<input type="reset" value="res2" name="in_reset">
+		</form>
+	</body>
+</html>
