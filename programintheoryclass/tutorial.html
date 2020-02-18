@@ -1,6 +1,53 @@
-<<<<<<< HEAD
-<!-- Prepare a tutorial in a single webpage on any technical topic of your choice with table of contents on the top of the page, followed by contents.
-=======
-<!-- Prepare a tutorial in a single webpage on any technical topic of your choice with table of contents on the top of the page, followed by contents.
->>>>>>> 7fddb0ba9f9b60f4de0f232cd523081203a3380b
-When any item is pressed from a table of contents the pointer should  move to the item within your tutorial-->
+<!DOCTYPE html>
+<!-- Prepare a tutorial in a single webpage on any technical topic of your choice with table of contents on the top of the page, followed by contents.-->
+<html>
+    <head><title>Tutorial</title></head>
+    <body bgcolor="#b2e6f3">
+        <h1 align="center"><font color="#ea781f"> Windows 10 dual boot with Ubuntu</font></h1>
+        <b><font color="#0d0cef"> #Contents</font>
+            <ol>
+                <li><a href="#download">Download Software Needed</a></li>
+                <li><a href="#pendrive">Create Live Ubuntu Pendrive</a></li>
+                <li><a href="#configure">Configure Dual Boot</a></li>
+            </ol>
+        </b>
+        
+        <h2 id="download"><font color="#e78e6e">#Download Software Needed</font></h2>
+        Download All softwares mentioned below.<br/>
+        <a href="https://ubuntu.com/download/desktop">Download Ubuntu</a><br/>
+        <a href="https://neosmart.net/Download/Register">Download EasyBCD</a><br/>
+        <a href="https://www.pendrivelinux.com/downloads/YUMI/YUMI-2.0.6.9.exe">Download YUMI Multiboot creator</a> download suitable version(bios/uefei)<br/>
+        <br/><br/><br/>
+        
+        
+        
+        <h2 id="pendrive"><font color="#e78e6e">#Create Live Ubuntu Pendrive</font></h2>
+        <b><font size="4px">1.Open Yumi</font></b><br/><br/>
+        <b><font size="4px">2.Insert USB</font></b><br/><br/>
+        <b><font size="4px">3.Select Pendrive</font></b><br/>
+            <image src="./Images/yumi1.jpg" alt="yumi1" height="400px" width="400px"></image>
+        <br/>
+        <b><font size="4px">4.Select Ubuntu</font></b><br/>
+            <image src="./Images/yumi2.jpg" alt="yumi2" height="400px" width="400px"></image>
+        <br/>
+        <b><font size="4px">5.Browse and select iso file </font></b><br/>
+            <image src="./Images/yumi3.jpg" alt="yumi3" height="400px" width="400px"></image>
+        <br/>
+        <b><font size="4px">6.Create usb</font></b><br/>
+            <image src="./Images/yumi4.jpg" alt="yumi4" height="400px" width="400px"></image>
+        <br/>
+        After Ubuntu usb is created, install Ubuntu on one of your partition which will be turned into ext3/ext4 format.
+        
+        
+        <h2 id="configure"><font color="#e78e6e">#Configure Dual Boot</font></h2>
+        <b><font size="4px">1.Update grub for recovering Windows</font></b><br/>
+        Now after successfull installation of Ubuntu your default bootloader will change from Windows bootloader to grub2.0. Windows 10 entry is automativally added in grub.<br/>
+        Restart computer and boot into Windows 10., Open EasyBCD and follow given steps:<br/>
+        <image src="./Images/bcd1.jpeg" alt="bcd1" height="400px" width="400px"></image>
+        Step 1: Click on Add New Entry on left bar<br/>
+        Step 2: Click on Linux tab on top<br/>
+        Step 3: Select Type: grub2, Name:xyz, Drive:Automatic Locate and Load<br/>
+        Step 4: Click on Add entry, then Save Setting.<br/><br/>
+        Now you will boot into Windows bootloader where you will be asked to choose an OS. Enjoy your dual boot:)Thank you for your support.
+    </body>
+</html>
